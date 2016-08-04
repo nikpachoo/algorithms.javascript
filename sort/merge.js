@@ -25,6 +25,8 @@ function _sort(a, aux, lo, hi, less) {
     _merge(a, aux, lo, mid, hi, less);
 }
 
+module.exports.merge = _merge;
+
 function _merge(a, aux, lo, mid, hi, less) {
     'use strict';
 

@@ -11,6 +11,8 @@
 
     const mergeSort = require('./../merge');
 
+    const mergeBUSort = require('./../mergeBU');
+
     let original = fs.readFileSync('randomNumber.txt').toString().split("\n");
 
     original.pop();
@@ -26,6 +28,8 @@
     testSort('shell sort', shellSort);
 
     testSort('merge sort', mergeSort);
+
+    testSort('merge bu sort', mergeBUSort);
 
     testSort('system sort');
 
