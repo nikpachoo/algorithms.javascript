@@ -1,4 +1,6 @@
-export default class SymbolTable {
+"use strict";
+
+module.exports = class SymbolTable {
     /**
      * put pair key-value in table
      * remove key of table if value equal null
@@ -23,7 +25,9 @@ export default class SymbolTable {
      * is there value relative with key
      * @param key
      */
-    contains(key) {}
+    contains(key) {
+        return !!this.get(key);
+    }
 
     /**
      * table is empty?
@@ -101,7 +105,7 @@ export default class SymbolTable {
      * all keys from table in order
      */
     keys() {
-        return this.keys(this.min(), this.max());
+        return this.keysOf(this.min(), this.max());
     }
 
     /**
@@ -110,4 +114,4 @@ export default class SymbolTable {
      * @param hi
      */
     keysOf(lo, hi) {}
-}
+};
