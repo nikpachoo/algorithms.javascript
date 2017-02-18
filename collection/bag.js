@@ -1,4 +1,4 @@
-export default class Bag {
+class Bag {
     constructor() {
         this.items = [];
     }
@@ -32,3 +32,5 @@ export default class Bag {
         }
     }
 }
+
+module.exports = Bag;
