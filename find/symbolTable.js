@@ -114,4 +114,14 @@ module.exports = class SymbolTable {
      * @param hi
      */
     keysOf(lo, hi) {}
+
+    compaireTo(a, b) {
+        if (a > b) {
+            return 1;
+        } else if (a < b) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
 };
