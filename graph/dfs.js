@@ -13,7 +13,7 @@ class dfs {
         this.marked[v] = true;
         this.count++;
 
-        for(w of G.adj()) {
+        for(let w of G.adjacencyFor(v)) {
             if (!this.isMarked(w)) {
                 this.dfs(G, w);
             }
