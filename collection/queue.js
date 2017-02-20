@@ -11,7 +11,7 @@ class Queue {
     }
 
     dequeue() {
-        this.queue.shift();
+        return this.queue.shift();
     }
 
     isEmpty() {
