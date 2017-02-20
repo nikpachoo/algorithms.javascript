@@ -7,7 +7,7 @@ class dfp {
     constructor(G, source) {
         this.marked = new Array(G.V());
         this.count = 0;
-        this.edgeTo = [G.V()];
+        this.edgeTo = [];
         this.s = source;
 
         this.dfp(G, source);
@@ -17,7 +17,7 @@ class dfp {
         this.marked[v] = true;
         this.count++;
 
-        for(w of G.adj()) {
+        for(let w of G.adjacencyFor(v)) {
             if (!this.marked[v]) {
                 this.edgeTo[w] = v;
                 this.dfp(G, w);
