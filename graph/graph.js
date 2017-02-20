@@ -32,7 +32,7 @@ class Graph {
     }
 
     initGraph(verticesCount) {
-        this.verticesCount = verticesCount;
+        this.verticesCount = +verticesCount;
         this.edgesCount = 0;
         this.adj = [];
 
