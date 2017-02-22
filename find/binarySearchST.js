@@ -16,7 +16,7 @@ module.exports = class BinarySearchST extends SymbolTable {
     }
     
     size() {
-        return N;
+        return this.N;
     }
 
     keysOf(lo, hi) {
