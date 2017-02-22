@@ -26,7 +26,7 @@ module.exports = class SymbolTable {
      * @param key
      */
     contains(key) {
-        return !!this.get(key);
+        return this.get(key) !== null;
     }
 
     /**
