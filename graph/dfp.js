@@ -1,7 +1,7 @@
 const Stack = require('../collection/stack');
 
 /**
- * Deep First Paths
+ * Depth First Paths
  */
 class dfp {
     constructor(G, source) {

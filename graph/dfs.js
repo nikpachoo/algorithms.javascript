@@ -1,5 +1,5 @@
 /**
- * Deep First Search
+ * Depth First Search
  */
 class dfs {
     /**
