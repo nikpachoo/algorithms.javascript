@@ -2,6 +2,10 @@
  * Deep First Search
  */
 class dfs {
+    /**
+     * @param G {Graph|Digraph}
+     * @param source
+     */
     constructor(G, source) {
         this.marked = new Array(G.V());
         this.count = 0;
