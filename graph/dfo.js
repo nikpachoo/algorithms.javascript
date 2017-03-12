@@ -19,14 +19,26 @@ class dfo {
         }
     }
 
+    /**
+     * @public
+     * @return {Queue}
+     */
     pre() {
         return this.preOrder;
     }
 
+    /**
+     * @public
+     * @return {Queue}
+     */
     post() {
         return this.postOrder;
     }
 
+    /**
+     * @public
+     * @return {Stack}
+     */
     reversePost() {
         return this.reversePostOrder;
     }
